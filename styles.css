@@ -107,8 +107,6 @@ blockquote::before {
     text-align: center;
 }
 .innernav {
-    position: sticky;
-    top: 0;
     background-image: linear-gradient(rgb(126, 31, 10), rgb(176, 8, 8), rgb(126, 41, 10));
 }
 /* tenglar */
@@ -140,10 +138,13 @@ audio {
 @media screen and ( min-width: 37.5rem) {
 
     .innernav {
+        position: sticky;
+        top:0;
         display: flex;
         flex-direction: row;
         flex-flow: wrap;
         justify-content: space-around;
+        z-index:99;
     }
     .innernav a:link {
         border: 0;
